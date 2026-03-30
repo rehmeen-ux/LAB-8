@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body ng-app="">
+    <h2>Student Information Form</h2>
+    <form>
+        <input type="text" ng-model="name" placeholder="Enter Name"><br>
+        <input type="text" ng-model="roll" placeholder="Enter Roll Number"><br>
+        <input type="text" ng-model="dept" placeholder="Enter Department"><br>
+    </form>
+    <h3>Entered Information:</h3>
+    <p>Name: {{name}}</p>
+    <p>Roll Number: {{roll}}</p>
+    <p>Department: {{dept}}</p>
+</body>
+</html>
